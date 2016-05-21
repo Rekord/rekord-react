@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!-- QUnit -->
+    <link rel="stylesheet" href="http://code.jquery.com/qunit/qunit-1.19.0.css">
+    <script src="http://code.jquery.com/qunit/qunit-1.19.0.js"></script>
+
+    <!-- React -->
+    <script src="../bower_components/react/react.js"></script>
+    <script src="../bower_components/react/react-dom.js"></script>
+    <script src="../bower_components/babel/browser.js"></script>
+
+    <!-- Build -->
+    <script src="http://rawgit.com/Rekord/rekord/master/build/rekord.js"></script>
+    <script src="../build/rekord-react.js"></script>
+
+    <!-- Debugging -->
+    <!--<script src="../build/impl/rekord-debug.min.js"></script>-->
+
+    <!-- Test Base -->
+    <script src="base.js"></script>
+
+  </head>
+  <body>
+
+    <!-- Tests -->
+    <script type="text/babel" src="tests.js"></script>
+
+    <!-- QUnit UI -->
+    <h1 id="qunit-header">Rekord-React Binding</h1>
+    <h2 id="qunit-banner"></h2>
+    <div id="qunit-testrunner-toolbar"></div>
+    <h2 id="qunit-userAgent"></h2>
+    <ol id="qunit-tests"></ol>
+    <div id="qunit-fixture">
+        <div id="container"></div>
+    </div>
+
+  </body>
+</html>
