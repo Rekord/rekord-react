@@ -1,6 +1,9 @@
 function Bind( component, target, property, set )
 {
-  if ( !(this instanceof Bind) ) return new Bind( component, target );
+  if ( !(this instanceof Bind) )
+  {
+    return new Bind( component, target );
+  }
 
   this.component = component;
   this.target = target;
@@ -20,7 +23,7 @@ Bind.prototype =
   {
     var target = this.target;
 
-    if ( Rekord.isRekord( target ) )
+    if ( isRekord( target ) )
     {
       target = this.target = target.Database;
     }

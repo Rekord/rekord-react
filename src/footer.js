@@ -1,4 +1,4 @@
 
   Rekord.Bind = Bind;
 
-})( this, React, Rekord );
+})( this, this.Rekord, this.React );

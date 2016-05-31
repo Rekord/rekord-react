@@ -1,9 +1,13 @@
-(function (global, React, Rekord, undefined)
+(function (global, Rekord, React, undefined)
 {
+  var isRekord = Rekord.isRekord;
 
 function Bind( component, target, property, set )
 {
-  if ( !(this instanceof Bind) ) return new Bind( component, target );
+  if ( !(this instanceof Bind) )
+  {
+    return new Bind( component, target );
+  }
 
   this.component = component;
   this.target = target;
@@ -23,7 +27,7 @@ Bind.prototype =
   {
     var target = this.target;
 
-    if ( Rekord.isRekord( target ) )
+    if ( isRekord( target ) )
     {
       target = this.target = target.Database;
     }
@@ -61,4 +65,4 @@ Bind.prototype =
 
   Rekord.Bind = Bind;
 
-})( this, React, Rekord );
+})( this, this.Rekord, this.React );

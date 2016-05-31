@@ -1,2 +1,3 @@
-(function (global, React, Rekord, undefined)
+(function (global, Rekord, React, undefined)
 {
+  var isRekord = Rekord.isRekord;
