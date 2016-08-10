@@ -1,11 +1,11 @@
 {
   "name": "rekord-react",
-  "version": "1.0.0",
+  "version": "1.4.0",
   "homepage": "https://github.com/Rekord/rekord-react",
   "authors": [
     "Philip Diffenderfer <pdiffenderfer@gmail.com>"
   ],
-  "description": "A rekord binding to React - adding Rekord.Bind",
+  "description": "A rekord binding to React - adding Rekord.Sync",
   "main": "build/rekord-react.js",
   "keywords": [
     "javascript",
@@ -26,6 +26,6 @@
   },
   "dependencies": {
     "react": "*",
-    "rekord": "^1.2.0"
+    "rekord": "~1.4.0"
   }
 }

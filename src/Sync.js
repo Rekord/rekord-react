@@ -1,8 +1,8 @@
-function Bind( component, target, property, set )
+function Sync( component, target, property, set )
 {
-  if ( !(this instanceof Bind) )
+  if ( !(this instanceof Sync) )
   {
-    return new Bind( component, target );
+    return new Sync( component, target );
   }
 
   this.component = component;
@@ -17,7 +17,7 @@ function Bind( component, target, property, set )
   this.on();
 }
 
-Bind.prototype =
+Sync.prototype =
 {
   on: function()
   {

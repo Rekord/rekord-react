@@ -1,7 +1,7 @@
 {
   "name": "rekord-react",
-  "version": "1.0.0",
-  "description": "A rekord binding to React - adding Rekord.Bind",
+  "version": "1.4.0",
+  "description": "A rekord binding to React - adding Rekord.Sync",
   "author": "Philip Diffenderfer",
   "license": "MIT",
   "repository": {
@@ -15,9 +15,11 @@
     "gulp": "^3.9.0",
     "gulp-check-filesize": "^2.0.1",
     "gulp-concat": "^2.6.0",
+    "gulp-insert": "^0.5.0",
     "gulp-jshint": "^2.0.1",
     "gulp-load-plugins": "^1.2.4",
     "gulp-qunit": "^1.4.0",
+    "gulp-rename": "^1.2.2",
     "gulp-shell": "^0.5.2",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.3",
@@ -27,6 +29,6 @@
   },
   "dependencies": {
     "react": "*",
-    "rekord": "^1.2.0"
+    "rekord": "~1.4.0"
   }
 }

@@ -1,8 +1,8 @@
-module( 'Rekord.Bind' );
+module( 'Rekord.Sync' );
 
-test( 'Bind props', function(assert)
+test( 'Sync props', function(assert)
 {
-  var prefix = 'Bind_props_';
+  var prefix = 'Sync_props_';
 
   var Task = Rekord({
     name: prefix + 'task',
@@ -13,7 +13,7 @@ test( 'Bind props', function(assert)
 
   var TaskItem = React.createClass({
     componentDidMount: function() {
-      Rekord.Bind( this, this.props.task );
+      Rekord.Sync( this, this.props.task );
     },
     render: function() {
       var task = this.props.task;
@@ -46,9 +46,9 @@ test( 'Bind props', function(assert)
 });
 
 
-test( 'Bind state', function(assert)
+test( 'Sync state', function(assert)
 {
-  var prefix = 'Bind_state_';
+  var prefix = 'Sync_state_';
 
   var Task = Rekord({
     name: prefix + 'task',
@@ -62,7 +62,7 @@ test( 'Bind state', function(assert)
       return {task: t0};
     },
     componentDidMount: function() {
-      Rekord.Bind( this, t0, 'task' );
+      Rekord.Sync( this, t0, 'task' );
     },
     render: function() {
       var task = this.state.task;

@@ -1,12 +1,13 @@
+/* rekord-react 1.4.0 - A rekord binding to React - adding Rekord.Sync by Philip Diffenderfer */
 (function (global, Rekord, React, undefined)
 {
   var isRekord = Rekord.isRekord;
 
-function Bind( component, target, property, set )
+function Sync( component, target, property, set )
 {
-  if ( !(this instanceof Bind) )
+  if ( !(this instanceof Sync) )
   {
-    return new Bind( component, target );
+    return new Sync( component, target );
   }
 
   this.component = component;
@@ -21,7 +22,7 @@ function Bind( component, target, property, set )
   this.on();
 }
 
-Bind.prototype =
+Sync.prototype =
 {
   on: function()
   {
@@ -63,6 +64,6 @@ Bind.prototype =
 };
 
 
-  Rekord.Bind = Bind;
+  Rekord.Sync = Sync;
 
 })( this, this.Rekord, this.React );
