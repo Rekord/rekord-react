@@ -1,4 +1,4 @@
-/* rekord-react 1.4.0 - A rekord binding to React - adding Rekord.Sync by Philip Diffenderfer */
+/* rekord-react 1.4.1 - A rekord binding to React - adding Rekord.Sync by Philip Diffenderfer */
 (function (global, Rekord, React, undefined)
 {
   var isRekord = Rekord.isRekord;
