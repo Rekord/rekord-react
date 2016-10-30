@@ -1,6 +1,29 @@
-/* rekord-react 1.4.1 - A rekord binding to React - adding Rekord.Sync by Philip Diffenderfer */
-(function (global, Rekord, React, undefined)
+/* rekord-react 1.4.2 - A rekord binding to React - adding Rekord.Sync by Philip Diffenderfer */
+// UMD (Universal Module Definition)
+(function (root, factory)
 {
+  if (typeof define === 'function' && define.amd) // jshint ignore:line
+  {
+    // AMD. Register as an anonymous module.
+    define(['Rekord', 'react'], function(Rekord, react) { // jshint ignore:line
+      return factory(root, Rekord, react);
+    });
+  }
+  else if (typeof module === 'object' && module.exports)  // jshint ignore:line
+  {
+    // Node. Does not work with strict CommonJS, but
+    // only CommonJS-like environments that support module.exports,
+    // like Node.
+    module.exports = factory(global, require('Rekord'), require('react'));  // jshint ignore:line
+  }
+  else
+  {
+    // Browser globals (root is window)
+    root.Rekord = factory(root, root.Rekord, root.React);
+  }
+}(this, function(global, Rekord, React, undefined)
+{
+
   var isRekord = Rekord.isRekord;
 
 function Sync( component, target, property, set )
@@ -66,4 +89,6 @@ Sync.prototype =
 
   Rekord.Sync = Sync;
 
-})( this, this.Rekord, this.React );
+  return Rekord;
+
+}));
