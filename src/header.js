@@ -4,7 +4,7 @@
   if (typeof define === 'function' && define.amd) // jshint ignore:line
   {
     // AMD. Register as an anonymous module.
-    define(['Rekord', 'react'], function(Rekord, react) { // jshint ignore:line
+    define(['rekord', 'react'], function(Rekord, react) { // jshint ignore:line
       return factory(root, Rekord, react);
     });
   }
@@ -13,7 +13,7 @@
     // Node. Does not work with strict CommonJS, but
     // only CommonJS-like environments that support module.exports,
     // like Node.
-    module.exports = factory(global, require('Rekord'), require('react'));  // jshint ignore:line
+    module.exports = factory(global, require('rekord'), require('react'));  // jshint ignore:line
   }
   else
   {

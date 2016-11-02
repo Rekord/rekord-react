@@ -1,6 +1,6 @@
 {
   "name": "rekord-react",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "A rekord binding to React - adding Rekord.Sync",
   "author": "Philip Diffenderfer",
   "license": "MIT",
