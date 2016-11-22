@@ -1,4 +1,4 @@
-/* rekord-react 1.4.3 - A rekord binding to React - adding Rekord.Sync by Philip Diffenderfer */
+/* rekord-react 1.5.0 - A rekord binding to React - adding Rekord.Sync by Philip Diffenderfer */
 // UMD (Universal Module Definition)
 (function (root, factory)
 {
